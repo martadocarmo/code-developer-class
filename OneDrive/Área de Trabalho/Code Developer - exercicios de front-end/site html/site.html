@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+  <body>
+
+    <h1>id="topo">Cabeçalho 1 (Heading 1)</h1>
+    <h2>Cabeçalho 2 (Heading 2)</h2>
+    <h3>Cabeçalho 3 (Heading 3)</h3>
+    <h4>Cabeçalho 4 (Heading 4)</h4>
+    <h5>Cabeçalho 5 (Heading 5)</h5>
+    <h6>Cabeçalho 6 (Heading 6)</h6>
+    <!--comentario que so aparece na revisao/inspeccao da pagina-->
+
+    <p>This is a paragraph.</p>
+
+    <p class="azul tamanho20 textoDireita texto_direita">Isto é um paragrafo!</p>
+    
+    <p>Letras em <strong>bold</strong>.</p>
+    
+    <p class="azul">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br/>
+    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+    </p>
+    <span> Isto é um span.</span>
+    <span> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+    </span>
+    <div>Isto é umaa div (container) </div>
+
+    <div>
+      <a href="https:www.galileu.pt">Site da galileu</a><!--(isto é um link absoluto(ir para um site externo))-->
+    </div>
+    <p>
+      <a href="galeria/galeria.html">Galeria</a><!--(isto é um link relativo (esta a ir para dentro da pasta galeria))-->
+    </p>
+    <span>
+      Conteudo<a href="xpto.html">XPTO</a>
+    </span>
+
+    <img src="imagens/image1.jpg" width="200px" >Imagem 1</a>
+
+    <div><p><a href="galeria/galeria.html" title="link para a Galeria">
+      <img scr="imagens/image4.jpg" width="250" alt="link para galeria de imagem"/> <span>galeria</span><!--(site galeria onde tem varias imagens numa pasta)-->
+    </a></p></div>
+
+    <div><p>
+      <a href="https:www.galileu.pt" target="_blank" download>Site da galileu</a> <!--(isto é um link absoluto(ir para um site externo))-->
+    </p></div>
+
+    
+
+
+    <h3>Listas NAO ordenada </h3><!--(ul=lista nao ordenada)-->
+    <ul>
+      Item A
+      Item B
+    </ul>
+
+    <h3>Listas NAO ordenada </h3><!--(il=lista (nao ordenada )com bullets points (pontinhos) tem numeros ou letras)-->
+    <ul>
+      <li>Item A</li>
+      <li>Item B</li>
+    </ul>
+
+    <h3>Listas ordenada </h3><!--(ol=lista ordenada= tem numeros 1,2,3 (pontinhos) )-->
+    <ol type="i">
+      <li>Primeiro</li>
+      <li>Segundo</li>
+      <li>Terceiro</li>
+    
+      <ol>
+        <li>Quarto</li><!--(cascata)-->
+      </ol>
+    </ol>
+
+
+    <dl> <!--(tipo caracteristica postas um pouco mais a baixo)-->
+      <dt>Cofee</dt>
+      <dd>hot or iced drink, black </dd> <dt>Milk</dt>
+    </dl>
+    <pre>
+      (java scrip texto tipo imagem)
+    </pre>
+
+    <p>
+      x<sup>2</sup>
+      
+    </p>
+
+
+    <blockquote>
+      isto é uma citação
+    </blockquote>
+
+
+    <q>
+      Citacão com aspas
+    </q>
+
+
+    <h3>Tabelas</h3>
+
+    <table>
+      <tr> 
+        <th>Numero</th>
+        <th>nome </th>
+        <th>Classificaçao</th>
+      </tr>
+      <tr> 
+        <td>1</td>
+        <td>Joao </td>
+        <td>18</td>
+        <td></td><!--(boa pratica)-->
+      </tr>
+      <tr> 
+        <td>2</td>
+        <td>Maria </td>
+        <td>16</td>
+        <td>Podia fazer melhor</td>
+      </tr>
+      <tr> 
+        <td>3</td>
+        <td>Zé </td>
+        <td></td> <!--(necessario para porque ele é burro)-->
+        <td>Faltou</td>
+      </tr>
+    </table>
+
+
+
+    <h3> Formulários</h3>
+    <form method="get" action="galeria/galeria.html">
+    
+      <label> Nome</label>
+      <input type ="text" name="nome"/>
+      
+      <label> E-mail</label>
+      <input type ="email" name="email"/>
+      
+      <label> Mensagem</label>
+      <input type ="text" name="mensagem">
+          
+      <!--<button>Submeter <button> submete porque esta dentro do form-->
+      <imput type="submit" value="Enviar">
+    </form>
+      
+    <p></p>
+    <p></p>
+
+
+
+
+    <p>
+      <a href="#topo">Ir para o topo</a><!--(escreve no site ir para o topo e por Id no cabecalho 1)-->
+    </p>
+
+  </body>
+</html>

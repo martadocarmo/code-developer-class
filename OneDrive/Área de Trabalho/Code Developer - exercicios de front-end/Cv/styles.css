@@ -1,0 +1,25 @@
+main{
+    margin: 0 auto;
+    width: 960px; 
+}
+
+.background{
+    background-image: url(Imagens/headerpicture.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.titulo{
+    text-transform: uppercase; 
+    text-align: center;
+    color:dimgray;
+}
+.subtitulo{
+    text-transform: capitalize; 
+    text-align: center;
+    color: dimgray;
+}
+

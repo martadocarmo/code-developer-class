@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+
+        <script>
+            var numero =1;
+            console.log(numero);
+            var numero = '"abc"';
+            console.log(numero);
+
+
+            // ES6 = Ecmascript 6 => especificacao de javascrip actual
+            //defenir uma constante (ES6)
+            const constante =123;
+            console.log(constante);
+            // constante =456; nao é possivel voltar a tribuir um valor a uma contantante
+            
+            // var /let constante = 322;econsole.log(consatnte);  não é possivel utilizar o mesmo nome ja usado numa constante
+
+            /*
+            constante = 456 // não é possivel voltar a  atribuir um valor a uma constante
+            console.log (constante);
+            */
+           //defenir uma variavel (ES6)
+           let a = null;
+           console.log(a);
+
+           // ciclo com variavel em ES5
+           var num1= 100; //desnecessario porque é sempre 10
+           for ( num1 = 0; num1 < 10; num1+2){
+                console.log(num1);
+            }
+            console.log(num1);
+
+            /*//ciclo com variavel  em ES6
+            let num2 =1000; //a variavel num2 e a num2 do FOR sao variaveis diferentes MESMO COM O MESMO NOME
+            for (let num2 =50; num2<60; num2=num2+2){
+                console.log(num2);
+            }
+            console.log(num2);*/
+
+            //ciclo com variavel  passa o num3 (1000)  para um num3 do for (log scoped) ou seja usar o valor de num3 para iniciallizacao a variavel block-scoped num2
+            /*let num3 =1000; 
+            for (let num2 =num3; num3<1010; num3=num3+2){
+                console.log(num3); //mostra este valor e depois o num3
+            }
+            console.log(num3); SE USAR VAR JA PODE SER NUM3= NUM3*/ 
+
+
+             /*//ciclo com variavel  numca  fazer isto
+              num3 =1000; 
+            for (var num3 =num3; num3<60; num3=num3+2){
+                console.log(num3); // variavel global com var pode ter o mesmo valor
+            }
+            console.log(num3);*/
+
+
+            //Array vazio
+            let meuArray =new Array();// ou =[]
+            console.log(meuArray);
+
+            //Array c conteudo 
+            // let listaNumeros = [1,2,3,'ola',5] ou
+            let listaNumeros=[1,2,3,'ola',5]; 
+            console.log(listaNumeros);//lista de numeros
+            console.log(listaNumeros.indexof(3)) //o 3 no arraiy esta na posicao = 2 do array (0,1,2)
+            console.log(listaNumeros.indexof(4))//= -1 o que quer dizer que nao existe
+            listaNumeros.push('ultimo'); //posicao 5 ultimos (adicionar elemento no final do array)
+            listaNumeros[8]='novo';
+            listaNumeros.push('10');// string com o numero dez escrito  
+            console.log(listaNumeros);
+
+
+            let itemArray= listaNumeros.pop(); // retirar ultimo elemento do array
+            console.log(listaNumeros); //
+            console.log(itemArray);//
+
+
+            listaNumeros.unshift('inicio', 'proximo'); // adicionar dois elemento ao inicio do  array
+            console.log(listaNumeros); //array length:11
+
+            
+            let itemInicio= listaNumeros.shift(); // deixei de ter 'inicio ' como a 1* posicao (retira 1*) posicao do array
+            console.log(itemInicio);
+
+            //partir o array em dois elmentos
+            
+
+
+            
+
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

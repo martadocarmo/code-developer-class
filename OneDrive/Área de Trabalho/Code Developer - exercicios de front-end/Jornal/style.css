@@ -1,0 +1,84 @@
+
+/* comentarios de css*/
+
+/* Reset  margins: All */
+* {
+    margin:0;
+    /*padding:0; = preenchimento
+    display: inline-block;*/
+}
+html {
+    font-size: 20px;
+} 
+
+.titulo {
+    /* comentario em css*/
+    color:rgb(120, 49, 234);
+    font-family:'Arial Narrow', 'Times New Roman',Tahoma, sans-serif
+}
+.branco,#ultimas{ /* # referencia a um id*/
+    color:#fff;
+}
+#ultimas{
+    background-color: rgb(227, 145, 189);  
+}
+
+/* Descendant selector: selects all descendants */
+article p {
+    color: rgb(119, 18, 165);
+}
+
+/* Adjacent sibling: selects the element next to the first element (must be at the same level than the first one) */
+article + p {
+    color: #de52e0;
+}
+
+/* Child selector: will select all child of the targeted parent */
+article > p {
+    background-color: #d3d3d3;
+}
+
+/* All siblings: will select all siblings that are after the first sibling (must be at same level than the first one) */
+article ~ p {
+    background-color: #eea7ea;
+}
+
+.anuncio p { /* class <article class="anuncio"> todos os p dos ficam com x cor */
+    color:#55116a
+}
+.anuncio div p { /* class <article class="anuncio"> todos os p dos ficam com x cor */
+    color:#985ea7
+}
+.card-noticia {
+    background-color: #fff;
+
+    border-width: 4px; /* ou colocar tudo na mesma linha tipo = border: 4px dashed #000 */
+    border-style: dashed;
+    border-color: rgb(80, 5, 95);
+    
+    box-sizing: border-box; /* fica tudo dentro do tamanho width 200px */
+    display: inline-block;/* para os blocos ficarem para em par */
+    margin: 10px;
+    padding: 10px; /* um genero de espacamento entre imagem e border */
+    width: 200px;/* total do tamanho do cargo da noticia */
+    
+}
+
+.card-noticia img{ /* largura max da foto se tiver que aumentar aumenta e vice versa */
+    max-width: 174px;
+}
+
+.container-noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around; /* css-tricks.com */
+    /*flex-direction: column; propriedade que so funciona com direction flex container*/
+}
+
+/* defenir uma media query para um um breakpoint,(regra que estou a impor) no fundo é um IF se quiser larguramax em pixels(mais comuns prints e screen)*/
+@media screen and (max-width: 600px) { 
+    .container-noticias {
+        flex-direction: column;
+    }
+}
+

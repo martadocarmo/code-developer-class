@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Jornal - Codo Developer</title> <!--cuidado com o titule da pagina aparece na barra de navegacao-->
+        <style>
+            a {
+                color: rgb(237, 100, 216);
+            }
+            
+
+        </style>
+       
+    </head>
+    <body>
+        <header>
+            <!--href="Link para a imagem"-->
+            <!--Barra de navegacao-->
+            <nav style="text-align: center;">
+                <a href="destaques.html">Destaques</a>
+                <a href="#ultimas">Últimas Notícias</a>
+                <a href="actualidade.html">Alerta CM</a>
+                <a href="desporto.html">Desporto</a>
+                <a href="dinheiro.html">Finanças</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="titulo" style ="color:rgb(103, 5, 110); ">Jornal</h1>
+            
+            <section id="ultimas">
+                <h2 class ="titulo branco">Últimas Notícias</h2> <!--titulo branco sao duas classes uma titulo e a outra branco-->
+                &nbsp;
+                &nbsp; <!--espacamento seguido paragrafo sem margem (enter e nonbreakingspace)-->
+                
+                <section class ="container-noticias">
+                    <article class ="card-noticia"> <!--card 'e algo que se repete container article'-->
+                        <img src="../site html/imagens/image3.jpg" alt="">                  
+                        <h3>Noticia 1</h3>
+                        <p>Resumo da noticia</p>
+                        <a href="link">Ler mais</a>
+                    </article>
+                    
+                    <article class ="card-noticia"> <!--card 'e algo que se repete container article'-->
+                        <img src="../site html/imagens/image2.jpg" alt="">
+                        <h3>Noticia 2</h3>
+                        <p>Resumo da noticia</p>
+                        <a href="link">Ler mais</a>
+                    </article>
+
+                    <article class ="card-noticia"> <!--card 'e algo que se repete container article'-->
+                        <img src="../site html/imagens/image1.jpg" alt="">
+                        <h3>Noticia 3</h3>
+                        <p>Resumo da noticia</p>
+                        <a href="link">Ler mais</a>
+                    </article>
+                </section>
+            </section>
+
+
+
+
+            <!--<section class ="container-anuncios">-->
+                <h2 id="titulo-anuncio">Anuncios</h2>
+                <article class="anuncio">
+                    <h3>Anuncio 1</h3>
+                    <p>Primeiro paragrafo</p>
+                    <p>Segundo paragrafo</p>
+                    <div>
+                        <p>Paragrafo da div</p>
+                    </div>
+                </article>
+                    <p>1º Paragrafo fora</p>
+                    <p>2º Paragrafo fora</p>
+                    
+                <article>
+                    <h3>Anuncio 2</h3>
+                    <p>Primeiro paragrafo</p>
+                    <p>Segundo paragrafo</p>
+                    <div>
+                        <p>Paragrafo da div</p>
+                    </div>
+                </article>
+                    <p>1º Paragrafo fora</p>
+                    <p>2º Paragrafo fora</p>
+            <!--</section>-->
+            
+
+        </main>
+    </body>
+
+    <script>
+        console.log(document.getElementById('titulo-anuncio').textContent); // original
+        document.getElementById('titulo-anuncio').textContent = 'Publicidade';  // para alterar o nome em JavaScript
+
+    </script>
+    
+</html>
